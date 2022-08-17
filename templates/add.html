@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+    {% import "bootstrap/wtf.html" as wtf %}
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Add a TODO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+        <link href="static/style.css" rel="stylesheet">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+    </head>
+    <body>
+        <div><h1>Add ToDo</h1>
+        </div>
+        <div>
+            <p>
+                {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            </p>
+        </div>
+
+    </body>
+</html>
